@@ -21,8 +21,8 @@ func TestFlattenJson(t *testing.T) {
 		},
 		{
 			name:  "Test case 2",
-			input: `{"key":["val1",2]}`,
-			want:  `{"key.0":"val1","key.1":2}`,
+			input: `{"key1":["val1",2]}`,
+			want:  `{"key1.0":"val1","key1.1":2}`,
 		},
 		// Add more test cases here
 	}
